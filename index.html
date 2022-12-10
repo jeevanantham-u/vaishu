@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD VAISHU....</title>
+    <style>
+        body{
+            background:linear-gradient(to bottom, #eff870, #070707);
+        }
+        .btn {
+  background: #03fff2;
+  background-image: -webkit-linear-gradient(top,#eff870, #070707);
+  background-image: -moz-linear-gradient(top, #eff870, #070707);
+  background-image: -ms-linear-gradient(top, #eff870, #070707);
+  background-image: -o-linear-gradient(top, #eff870, #070707);
+  background-image: linear-gradient(to bottom, #eff870, #070707);
+  -webkit-border-radius: 45;
+  -moz-border-radius: 45;
+  border-radius: 45px;
+  -webkit-box-shadow: 8px 11px 11px #4d4b4d;
+  -moz-box-shadow: 8px 11px 11px #4d4b4d;
+  box-shadow: 8px 11px 11px #4d4b4d;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 60px;
+  padding: 12px 20px 10px 20px;
+  border: solid #202224 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #1b3d52;
+  background-image: -webkit-linear-gradient(top, #1b3d52, #a6c8de);
+  background-image: -moz-linear-gradient(top, #1b3d52, #a6c8de);
+  background-image: -ms-linear-gradient(top, #1b3d52, #a6c8de);
+  background-image: -o-linear-gradient(top, #1b3d52, #a6c8de);
+  background-image: linear-gradient(to bottom, #1b3d52, #a6c8de);
+  text-decoration: none;
+}
+.image-banner{
+    margin: 100px auto;
+    height:400px; 
+    width: 600px;
+    display: none;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.image-banner.is-active{
+    display: block;
+}
+.button.is-active{
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="image-banner">
+        <img src="Many more HAPPY returns of the day . VAISHNAVI.png" alt="vaishu" style="object-fit: fit;width: 100%;height: 100%;border-radius: 30px;">
+    </div>
+    <div class="button">
+        <button class="btn">Click Me😍</button>
+    </div>
+    <script>
+        window.onload = function(){
+       
+        const btn = document.querySelector('.button');
+        const image = document.querySelector('.image-banner'); 
+
+        btn.addEventListener('click',function(){
+
+            btn.classList.toggle('is-active');
+            image.classList.toggle('is-active');
+        });
+    }
+
+
+    </script>
+    
+</body>
+</html>
